@@ -1,0 +1,152 @@
+Good Morning I'm Nagraj Panchal
+I'm from Bidar karnataka i have completed my graduvation in Computer Science & Engineering 
+Guru Nanak Dev Enginnering College Bidar 
+i have 4 + year work Experience in IT Feild 
+My Role : - Software Engineer
+Domain : - Banking
+Project : - Accounts
+1. In this project we have a different modules is accounts, Eligibility, Eligibility Rule, lookup, preference & payments.
+2. Accounts Contains
+-> Account Creation
+-> Adding address, phone Number, PAN ... etc.
+-> Once completed the account creation it will go to eligibility
+-> In the Eligibility there are checking account holder did any bad or  fraud transactions & they will check credit score.
+-> Based on the above checks they will go to eligibility rule.
+-> In eligibility rule contains different status RED,GREEN,YELLOW
+
+RED -> They won't give account ID because of fraud transactions.
+YELLOW -> Recently he has not paid like personal loans, home loans, credit card bills
+GREEN -> The account will create successfully.
+
+-> Preferences : -
+
+-> Based on his/her salary they will give some preferences like
+	-> They will Credit Card
+	-> Discounts or offers
+
+-> Payments : -
+
+-> Payment session we can transfer the fund from Account to Account, Account to different Account, Account to some other transactions
+
+
+-> Technologies :-
+
+1. Java 8 or 1.8 version
+2. Spring boot (2.x) Version
+3. Rest Service
+4. Micro Services
+5. MySQL or Mongo DB
+
+-> Tools :-
+
+1. Postman swagger -> Rest services testing
+2. IntelliJ -> Development
+3. Git -> Check in and checkout
+4. GitHub / Bitbucket -> Code repository
+5. Mockito -> Writing unit test cases
+6. Jacoco (Java Code Coverage)/ Sonar lint -> Code Coverage
+7. Jira -> User story / issue tracking tool
+8. Studio - 3t -> Mongo DB querying
+9. Oracle Work bench -> MySQL Querying
+10. Deployment (cloud) -> PCF (Pivotal Cloud Foundry)
+11. CI / CD -> Bamboo
+12. Maven -> Build tool
+13. PCF -> Cloud plat form
+14. Tomcat-> Server
+
+-> Responsibilities :- 
+
+1. Checking mails
+2. Checking assigned task or issue in jira
+3. Created RESTful API's Communicate with third party Service using rest template.
+4. Worked on RESTful project using JPA / Mongo Repository.
+5. Writing unit test cases and it test cases using Mockito and wire mock.
+6. Developing the REST based spring boot Applications & run those over cloud platform.
+7. Experience of developing Microservices
+8. Attending daily stand-up meeting, grooming sessions and scrum calls in a regular intervals
+
+-> Agile Methodology :-
+
+1. We are following agile methodology, In this 10 days sprint
+	8 days -> Development
+	2 days -> Testing
+2. First day we will do analysis on the user story.
+3. Next writing a business logic code.
+4. After that writing unit test cases using Mockito
+5. Testing in local whatever modified code in the user story.
+6. Deploy the application / Project in PCF
+
+Note :-
+1. In Between we are daily attending scrum calls (15 min) followed  by Technical discussion (1 hr)
+2. Grooming Sessions
+3. Refinement Calls
+4. Retro under
+	a. What went well in this sprint?
+	b. What not went well in this sprint?
+	c. What could have been better?
+5. Sprint review ( Demo on current sprint story to client).
+
+Spring Annotations :-
+
+-> A. Spring Core Annotations : 3 Types
+	1. Stereotype annotation : under one
+	@Component : under 3 Types
+		1. @Service
+		2. @Repository
+		3. @Controller
+	2. Auto wired Annotation : 2 types
+		1. @Auto wired
+		2. @Qualifier
+	3. Miscellaneous Annotation
+		1. @Primary
+		2. @value
+		3. @Pre Constructor
+		4. @Post Destructor
+		5. @Scope :
+		-> @Scope under types
+		1. Singleton
+		2. Prototype
+		3. Request
+		4. Session
+		5. Global session
+
+-> B. Lombok Annotation
+	@Setter
+	@Getter
+	@Hash Code
+	@All arg Constructor
+	@Required arg Constructor
+
+-> C. Hibernate Annotation
+	@Entity
+	@Id
+	@Table
+	@Column
+	@One to one
+	@One to Many
+	@Many to Many
+
+-> D. Spring Boot Application Under one
+	@Spring Boot Application
+	1. @Configuraton
+	2. @Enable Auto Configuration
+	3. @Component Scan
+
+-> E. Rest Service Annotation
+	@Rest Controller
+	@Request mapping
+	@Post mapping
+	@Put mapping
+	@Get mapping
+	@Delete mapping
+	@Patch mapping
+	@Response body
+	@Path variable
+	@Request body
+
+-> F. Exception under type
+	1. @Exception Handler
+	2. @Controller Advice
+
+
+ 
