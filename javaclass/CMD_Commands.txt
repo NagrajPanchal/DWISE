@@ -1,0 +1,219 @@
+****"CMD Commands"****
+
+CD --> Change Directory
+cd.. --> return to directory
+cd filename --> Add directory 
+CD /D Pathname --> Change Directory 
+echo >filename.txt --> create new file
+mkdir folderName --> Create New Folder
+md folderName --> Create New Folder
+mkdir "My New Folder" --> Create New Folder
+mkdir Folder1 Folder2 Folder3 --> Create New Folder
+mkdir ParentFolder\SubFolder --> Create New Folder
+ren old_file_name.txt new_file_name.txt
+rename old_file_name.txt new_file_name.txt
+del filename.txt --> Only single file delete
+del *.* --> Deleting all files in the current directory
+del *.log --> Deleting all files with a specific extension in the current directory
+del file1.txt file2.txt --> Delete specific files
+rmdir folderName --> Deleting an Empty Folder
+rmdir /s folderName --> To delete a folder along with all its files and subfolders
+move "source_folder_path" "destination_folder_path"
+move [Source] [Target]
+copy [source] [destination]
+
+
+**** JAVA Program Compile & RUN Commands ***** 
+java --version  --> it is shows java version 
+echo %JAVA_HOME% --> it is shows path of java jdk
+javac filename.java --Compile program
+java filename --> Run java program
+Compile with java package
+D:\DWISE\JavaProgram\JavaBasicProgram> javac -d . exception/ExceptionHandling.java
+Run java package with Arguments 
+D:\DWISE\javaProgram\javaBasicProgram>java exception/ExceptionHandling 4 2
+
+**** IntelliJ ****
+
+Ctrl + Shift + A --> Search
+Shift + F2 --> Error find location
+Ctrl + E  --> Recent file
+Ctrl + /  --> Add or Remove Comment
+Ctrl + Shift + / --> Comment block line 
+
+*** Git Bash ****
+
+--> 🔹 1. File & Directory Navigation (Bash commands)
+	pwd              # Print current working directory
+	ls               # List files
+	ls -a            # List all files (including hidden)
+	cd folder/       # Change directory
+	cd ..            # Move up one directory
+	cd ~             # Go to home directory
+	mkdir mydir      # Create new directory
+	rmdir mydir      # Remove empty directory
+	rm file.txt      # Delete file
+	rm -rf mydir     # Delete folder + contents
+	touch file.txt   # Create empty file
+	cat file.txt     # Show file contents
+	clear            # Clear screen
+
+--> 🔹. Useful Bash Utilities in Git Bash
+	echo "Hello" > file.txt      # Write text to file
+	nano file.txt                # Edit file (if nano installed)
+	history                      # Show past commands
+	whoami                       # Show current user
+	uname -a                     # Show system info
+
+*** Git Bash Commands for Github Add folder *** 
+	cd D:Folder name 
+	git init
+	git add file name 
+	git commit -m "Commit message"
+	git branch -M main
+	git remote add origin <GitHub Link>
+	git push -u origin main
+
+	git checkout -b my-new-branch
+	git add
+	git commit -m "New Branch"
+	git push -u origin my-new-branch
+
+	git pull --rebase origin master 
+	git commit -m "Fist Commit"
+	git push -u origin  main 
+	git status
+	git reflog 
+
+****Git Commands ****
+*--> 1. Setup & Configuration
+	git config --global user.name "Your Name"       # Set username
+	git config --global user.email "your@email.com" # Set email
+	git config --list                               # Show config
+	git help <command>                              # Help for a command
+
+*--> 2.Create & Clone Repositories
+	git init                         # Initialize a new Git repo
+	git clone <url>                  # Clone remote repo
+	git clone <url> myproject        # Clone into folder "myproject"
+
+*--> 3.Basic Snapshotting
+	git status                       # Show changed files
+	git add file.txt                 # Stage a file
+	git add .                        # Stage all changes
+	git reset file.txt               # Unstage a file
+	git diff                         # Show unstaged changes
+	git diff --staged                # Show staged changes
+	git commit -m "Message"          # Commit staged changes
+	git commit -am "Message"         # Add + commit tracked files
+
+*--> 4.Branching & Merging
+	git branch                       # List branches
+	git branch new-feature           # Create branch
+	git checkout new-feature         # Switch branch
+	git checkout -b new-feature      # Create + switch branch
+	git merge new-feature            # Merge branch into current 
+	git branch -d new-feature        # Delete branch
+
+*--> 5.Remote Repositories
+	git remote -v                    # Show remotes
+	git remote add origin <url>      # Add remote
+	git fetch origin                 # Fetch updates
+	git pull origin main             # Get updates & merge
+	git push origin main             # Push branch
+	git push -u origin main          # Push & set upstream
+
+*--> 6.Undoing Changes
+	git restore file.txt             # Discard changes in file
+	git restore --staged file.txt    # Unstage file
+	git reset --hard HEAD            # Reset working dir to last commit
+	git reset --hard <commit>        # Reset to specific commit
+	git revert <commit>              # Undo commit (new commit created)
+
+*--> 7.Viewing History
+	git log                          # Show commit history
+	git log --oneline                # Compact history
+	git log --graph --oneline        # Branch graph
+	git show <commit>                # Show commit details
+	git blame file.txt               # Who changed each line
+
+*--> 8.Stashing (Temporary Save)
+	git stash                        # Save uncommitted changes
+	git stash list                   # Show stashes
+	git stash apply                  # Reapply last stash
+	git stash pop                    # Apply + delete stash
+	git stash drop                   # Delete stash
+
+*--> 9.Tags (Versioning)
+	git tag                          # List tags
+	git tag v1.0                     # Create tag
+	git tag -a v1.0 -m "Message"     # Annotated tag
+	git show v1.0                    # Show tag info
+	git push origin v1.0             # Push tag
+	git push --tags                  # Push all tags
+
+*--> 10.Collaboration
+	git fetch                        # Download new data
+	git pull                         # Fetch + merge
+	git push                         # Push commits
+
+*--> 11.Advanced
+	git cherry-pick <commit>         # Apply specific commit
+	git rebase main                  # Reapply commits on top of another branch
+	git reflog                       # Show all HEAD movements
+	git clean -fd                    # Remove untracked files/dirs
+
+
+****GitHub ******
+GitHub Commands & Workflows
+-->🔹 1. Authentication
+	gh auth login                 # Login to GitHub (via CLI)
+	gh auth status                # Check login status
+
+-->🔹 2. Creating Repos
+	gh repo create                # Create new repo (local or remote)
+	gh repo clone <repo>          # Clone a repo from GitHub
+	gh repo fork <repo>           # Fork a repo into your account
+
+	Or with Git only:
+
+	git init
+	git remote add origin https://github.com/username/repo.git
+	git push -u origin main
+
+-->🔹 3. Working with Remotes (GitHub repo)
+	git remote -v                 # Show remotes
+	git remote add origin <url>   # Link local repo with GitHub
+	git push origin main          # Push commits to GitHub
+	git pull origin main          # Pull updates from GitHub
+
+-->🔹 4. Branches & PRs (Pull Requests)
+	git checkout -b feature-1     # Create new branch
+	git push origin feature-1     # Push branch to GitHub
+	gh pr create                  # Create PR (GitHub CLI)
+	gh pr list                    # List open PRs
+	gh pr merge                   # Merge a PR
+
+-->🔹 5. Issues & Discussions
+	gh issue create               # Create a new issue
+	gh issue list                 # List issues
+	gh issue status               # Check assigned issues
+
+	gh discussion list            # List discussions
+	gh discussion view <id>       # View a discussion
+
+-->🔹 6. Releases & Tags
+	git tag v1.0.0                # Create tag
+	git push origin v1.0.0        # Push tag to GitHub
+	gh release create v1.0.0      # Create a GitHub release
+	gh release list               # List releases
+
+-->🔹 7. Gists (GitHub Snippets)
+	gh gist create file.txt       # Create a new gist
+	gh gist list                  # List your gists
+	gh gist view <id>             # View gist
+
+-->🔹 8. Repo Management
+	gh repo view                  # View repo info
+	gh repo fork <url>            # Fork repo
+	gh repo delete                # Delete repo
